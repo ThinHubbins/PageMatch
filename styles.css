@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+html{
+    overflow: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+
+header h4 {
+    position: absolute;
+    left: 10%;
+    bottom: 1rem;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 20px;
+    font-family: "Mukta", sans-serif;
+    
+}
+
+header h4::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 48.53%;
+    width: 3px;
+    height: 45%;
+    background-color: red;
+    z-index: -1;
+}
+
+.intro {
+     font-family: "Mukta", sans-serif;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+.logo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+      transition: ease-in-out 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+ .tag-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Add any additional styling you need */
+  }
+
+/* Rest of your existing CSS styles */
+
+
+
+
+
+
+.spa{
+    color: red;
+    text-decoration: underline 2px solid black;
+}
+
+/* Style for the horizontal line */
+.horizontal-line {
+  width: 100%; /* Full width of the screen */
+  height: 60px; /* Thickness of the line */
+  background-color:lightgray; /* Color of the line */
+  position: absolute;
+  top: 50%; /* Position the line in the middle of the screen */
+  transform: translateY(-50%) rotate(45deg); /* Rotate the line 90 degrees and center it vertically */
+    z-index: -1;
+}
+
+
+.solution-message {
+font-family: "Mukta", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+/* Style for the search bar */
+#search-bar {
+  width: 150%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for the selected tags */
+.selected-tags {
+  margin-bottom: 10px;
+}
+
+.selected-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-right: 8px;
+  background-color:grey;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.selected-tag:hover {
+  background-color:dimgray;
+}
+
+/* Style for the remove button */
+.remove-tag {
+  margin-left: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Style for the categories list */
+#categories-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.category {
+  padding: 8px;
+  margin-bottom: 2px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.category:hover {
+  background-color: #e0e0e0;
+}
+/* Style for the link container */
+#link-container {
+  margin-top: 20px;
+}
+
+/* Style for the generated link */
+#link-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: grey; /* Adjust background color as needed */
+  color: #fff; /* Adjust text color as needed */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Style for the generated link on hover */
+#link-container a:hover {
+  background-color: dimgray; /* Adjust hover background color as needed */
+}
+@media only screen and (max-width: 800px) {
+    .solution-message{
+       margin-bottom: 20px;
+  font-size: 28px;
+        top: 20%;
+        position:absolute;
+        left: 50px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .tag-container{
+        position: absolute;
+        left: 200px;
+        top: 55%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .tag-container{
+        position: absolute;
+        left: 170px;
+        top: 55%;
+    }
+}
+
+
+@media only screen and (max-width: 440px) {
+    .solution-message{
+       margin-bottom: 20px;
+  font-size: 28px;
+        top: 10%;
+        position:absolute;
+        left: 50px;
+    }
+}
+@media only screen and (max-width: 435px) {
+    .tag-container{
+        position: absolute;
+        left: 150px;
+        top: 55%;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .tag-container{
+        position: absolute;
+        left: 140px;
+        top: 55%;
+    }
+    .search-container{
+        width: 90%;
+    }
+}
